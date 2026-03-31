@@ -81,6 +81,9 @@ let package = Package(
           package: "swift-tagged",
           condition: .when(traits: ["Tagged"])
         ),
+      ],
+      exclude: [
+        "CloudKit",
       ]
     ),
     .target(
