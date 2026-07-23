@@ -62,6 +62,9 @@ let package = Package(
           package: "swift-tagged",
           condition: .when(traits: ["SQLiteDataTagged"])
         ),
+      ],
+      exclude: [
+        "CloudKit",
       ]
     ),
     .target(
